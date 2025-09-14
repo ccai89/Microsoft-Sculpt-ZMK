@@ -16,14 +16,14 @@ Requirements:
 Upon disassembly you find a 1mm pitched 30 pin ribbon cable in this format:
 ```
 | 1| 2| 3|  ... # ...  |28|29|30|
-|  |  |  |      |     |  |  |  |
-|  |  |  |      |     |  |  ∟---- [ 30 ]
-|  |  |  |      |     |  ∟------- [ 29 ]
-|  |  |  |      |     ∟---------- [ 28 ]
-|  |  |  |      ∟---------------- [  # ]
-|  |  |  ∟----------------------- [  3 ]
-|  ∟----------------------------- [  2 ]
-∟-------------------------------- [  1 ]
+|  |  |  |      |      |  |  |  |
+|  |  |  |      |      |  |  ∟---- [ 30 ]
+|  |  |  |      |      |  ∟------- [ 29 ]
+|  |  |  |      |      ∟---------- [ 28 ]
+|  |  |  |      ∟----------------- [  # ]
+|  |  |  ∟------------------------ [  3 ]
+|  ∟------------------------------ [  2 ]
+∟--------------------------------- [  1 ]
 ```
 
 The following is based on the hardwork done by [Chris Paynter](https://chrispaynter.medium.com/modding-the-microsoft-sculpt-ergonomic-keyboard-to-run-qmk-41d3d1caa7e6) and [blttll](https://github.com/blttll/tmk_keyboard/blob/master/keyboard/sculpt/README.md) who did the hardwork of mapping the various keys to their corresponding pinds.
