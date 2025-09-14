@@ -3,14 +3,14 @@
 This project was born out of boredom as most personal projects are. I had a Microsoft Sculpt Keyboard remaining around when I was dealing with RSI from coding all day. I tried this first because I was able to find one for a steal, unfortunately as many have found - the proprietary wireless connection is HOT TRASH. I was still getting dropped keys with 6 inches of clear line of sight between the dongle and keyboard. Since then I switched to a Logitech K860 and it has been significantly better in terms of connection and overall usability.
 
 Upon disassembly you find a 1mm pitched 30 pin ribbon cable in this format:
-| 1| 2| 3|  ...#  |28|29|30|
-|  |  |  |     |  |  |  ∟--|     30
-|  |  |  |     |  |  ∟-----|     29  
-|  |  |  |     |  ∟--------|     28
-|  |  |  |     ∟-----------| ... #
-|  |  |  ∟-----------------|     3  
-|  ∟-----------------------|     2  
-∟--------------------------|     1  
+<p>| 1| 2| 3|  ...#  |28|29|30|</p>
+<p>|  |  |  |     |  |  |  ∟--|     30</p>
+<p>|  |  |  |     |  |  ∟-----|     29</p>
+<p>|  |  |  |     |  ∟--------|     28</p>
+<p>|  |  |  |     ∟-----------| ... #</p>
+<p>|  |  |  ∟-----------------|     3</p>  
+<p>|  ∟-----------------------|     2</p>  
+<p>∟--------------------------|     1</p>  
 
 The following is based on the hardwork done by [Chris Paynter](https://chrispaynter.medium.com/modding-the-microsoft-sculpt-ergonomic-keyboard-to-run-qmk-41d3d1caa7e6) and [blttll](https://github.com/blttll/tmk_keyboard/blob/master/keyboard/sculpt/README.md) who did the hardwork of mapping the various keys to their corresponding pinds.
 ## Here are the pinouts to describe what the matrix needs to be:
