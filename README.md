@@ -52,9 +52,9 @@ We only have 21 GPIO pins on the nRF52840 Pro Micro Board, so we need to consoli
 |	3					  	  	|	1						|	PGUP				|	F12			|	LBRC		|	MINS		|	RBRC		|	INS					|	Y				|	F5			|	F3			|	W				|	4			|	F6				|
 |	4						    	|	2						|	HOME				|	CALC		|	P				|	O				|	I				|							|	U				|	R				|	E				|	CAPS		|	3			|	T					|
 |	5						    	|	3						|	SLCK				|	ENT			|	SCLN		|	L				|	K				|	BSLS				|	J				|	F				|	D				|	(NUBS)	|	A			|	LGUI			|
-|	6						    	|	4						|	LALT (6)		|	APP			|	SLSH		|	QUOT		|					|	LEFT				|	H				|	G				|	F4			|	S				|	ESC		|	LALT(16)	|
+|	6						    	|	4						|	LALT (6)		|	APP			|	SLSH		|	QUOT		|					|	LEFT				|	H				|	G				|	F4			|	S				|	ESC		|	LALT (16)	|
 |	7						    	|	5						|	END					|	PGDN		|	RSFT (2)|	DOT			|	COMM		|	LSFT (14)		|	M				|	V				|	C				|	X				|	Z			|						|
-|	8				    			|	6						|	RGHT				|	UP			|	DOWN		|	RCTL (0)|					|	RSPC				|	N				|	B				|	LSPC		|					|				|	RCTL(17)	|
+|	8				    			|	6						|	RGHT				|	UP			|	DOWN		|	RCTL (0)|					|	RSPC				|	N				|	B				|	LSPC		|					|				|	RCTL (17)	|
 |	9					    		|	7						|	PSCR				|	F11			|	EQL			|	F9			|	F8			|	F10					|	F7			|	5				|	F2			|	F1			|	GRV		|	6					|
 
 ## Pinout Mapping - Keyboard ribbon cable <--> Pro Micro nRF52840:
