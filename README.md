@@ -2,16 +2,26 @@
 
 This project was born out of boredom as most personal projects are. I had a Microsoft Sculpt Keyboard remaining around when I was dealing with RSI from coding all day. I tried this first because I was able to find one for a steal, unfortunately as many have found - the proprietary wireless connection is HOT TRASH. I was still getting dropped keys with 6 inches of clear line of sight between the dongle and keyboard. Since then I switched to a Logitech K860 and it has been significantly better in terms of connection and overall usability.
 
-Upon disassembly you find a 1mm pitched 30 pin ribbon cable in this format:
-<p>| 1| 2| 3|  ...#  |28|29|30|</p>
-<p>|  |  |  |     |  |  |  ∟--|     30</p>
-<p>|  |  |  |     |  |  ∟-----|     29</p>
-<p>|  |  |  |     |  ∟--------|     28</p>
-<p>|  |  |  |     ∟-----------| ... #</p>
-<p>|  |  |  ∟-----------------|     3</p>  
-<p>|  ∟-----------------------|     2</p>  
-<p>∟--------------------------|     1</p>  
+Requirements:
+* Pro Micro nRF52840
+* 30 pin 1mm pitch Ribbon cable breakout board
+* Microsoft Sculpt Keyboard
+* Soldering equipment
+* Lithium Ion Battery with BMS board
+* 9x4x4mm Toggle switch (On/Off)
+* 6x6x4mm momentary switch
 
+Upon disassembly you find a 1mm pitched 30 pin ribbon cable in this format:
+```
+| 1| 2| 3|  ...#...  |28|29|30|
+|  |  |  |     |     |  |  ∟--|     30
+|  |  |  |     |     |  ∟-----|     29
+|  |  |  |     |     ∟--------|     28
+|  |  |  |     ∟--------------|      #
+|  |  |  ∟--------------------|      3
+|  ∟--------------------------|      2
+∟-----------------------------|      1
+```
 The following is based on the hardwork done by [Chris Paynter](https://chrispaynter.medium.com/modding-the-microsoft-sculpt-ergonomic-keyboard-to-run-qmk-41d3d1caa7e6) and [blttll](https://github.com/blttll/tmk_keyboard/blob/master/keyboard/sculpt/README.md) who did the hardwork of mapping the various keys to their corresponding pinds.
 ## Here are the pinouts to describe what the matrix needs to be:
 Pinout layout:
@@ -40,3 +50,27 @@ We only have 21 GPIO pins on the nRF52840 Pro Micro Board, so we need to consoli
 |	7						    	|	5						|	END					|	PGDN		|	RSFT (2)|	DOT			|	COMM		|	LSFT (14)		|	M				|	V				|	C				|	X				|	Z			|						|
 |	8				    			|	6						|	RGHT				|	UP			|	DOWN		|	RCTL (0)|					|	RSPC				|	N				|	B				|	LSPC		|					|				|	RCTL(17)	|
 |	9					    		|	7						|	PSCR				|	F11			|	EQL			|	F9			|	F8			|	F10					|	F7			|	5				|	F2			|	F1			|	GRV		|	6					|
+
+## Pinout Mapping - Keyboard ribbon cable <--> Pro Micro nRF52840:
+|Labeled|GPIO|Ribbon Cable|
+|--     |:--:|--:         |
+|006    |0	 |2           |
+|008    |1	 |3           |
+|017    |2	 |4           |
+|018    |3	 |5           |
+|020    |4	 |6           |
+|022    |5	 |7           |
+|024    |6	 |8           |
+|100    |7	 |9           |
+|011    |8	 |11+16       |
+|104    |9	 |13          |
+|106    |18  |14          |
+|101    |19  |15+10       |
+|102    |20  |17          |
+|107    |20  |25+26+27    |
+|113    |19  |23          |
+|111    |18  |22          |
+|113    |15  |21          |
+|111    |14  |20          |
+|010    |16  |19          |
+|009    |10  |18+24       |
