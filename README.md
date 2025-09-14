@@ -1,6 +1,8 @@
 # Microsoft-Sculpt-BLE-ZMK
 
-This project was born out of boredom as most personal projects are. I had a Microsoft Sculpt Keyboard remaining around when I was dealing with RSI from coding all day. I tried this first because I was able to find one for a steal, unfortunately as many have found - the proprietary wireless connection is HOT TRASH. I was still getting dropped keys with 6 inches of clear line of sight between the dongle and keyboard. Since then I switched to a Logitech K860 and it has been significantly better in terms of connection and overall usability.
+This project was born out of boredom as most personal projects are. I had a Microsoft Sculpt Keyboard remaining around when I was dealing with RSI from coding all day. I tried this first because I was able to find one for a steal, unfortunately as many have found - the proprietary wireless connection is HOT TRASH. I was still getting dropped keys with 6 inches of clear line of sight between the dongle and keyboard. Since then I switched to a Logitech K860 and it has been significantly better in terms of connection and overall usability. However, I have recently picked up custom keyboard building and now have a better understanding of keyboard matrix mapping and ZMK to embark on this project.
+
+Due to the ridiculousness of the US Tariffs at the time of this project - I have skipped trying to build a custom PCB and corresponding parts since it would cost a small fortune for a one off project, so everything is hand soldered.
 
 Requirements:
 * Pro Micro nRF52840
