@@ -60,7 +60,7 @@ We only have 21 GPIO pins on the nRF52840 Pro Micro Board, so we need to consoli
 ## Pinout Mapping - Keyboard ribbon cable <--> Pro Micro nRF52840:
 Left Side:
 |Labeled|GPIO|Ribbon Cable|
-|--     |:--:|--:         |
+|--     |:--:|:--:        |
 |006    |0	 |2           |
 |008    |1	 |4           |
 |017    |2	 |6+1         |
@@ -74,14 +74,14 @@ Left Side:
 
 Bottom:
 |Labeled|GPIO|Ribbon Cable|
-|--     |:--:|--:         |
+|--     |:--:|:--:        |
 |101    |18  |22          |
 |102    |19  |25+26+27    |
 |107    |20  |15+10       |
 
 Right Side:
 |Labeled|GPIO|Ribbon Cable|
-|--     |:--:|--:         |
+|--     |:--:|:--:        |
 |020    |17  |3           |
 |022    |19  |5           |
 |115    |18  |7           |
