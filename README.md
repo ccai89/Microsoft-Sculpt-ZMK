@@ -71,12 +71,14 @@ Left Side:
 |011    |7	 |16+11       |
 |104    |8	 |18+24       |
 |106    |9	 |20          |
+
 Bottom:
 |Labeled|GPIO|Ribbon Cable|
 |--     |:--:|--:         |
 |101    |18  |22          |
 |102    |19  |25+26+27    |
 |107    |20  |15+10       |
+
 Right Side:
 |Labeled|GPIO|Ribbon Cable|
 |--     |:--:|--:         |
